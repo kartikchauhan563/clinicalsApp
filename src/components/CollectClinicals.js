@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AddPatient extends React.Component{
+class CollectClinicals extends React.Component{
     render(){
         return(
             <div>
@@ -10,4 +10,4 @@ class AddPatient extends React.Component{
     }
 }
 
-export default AddPatient;
+export default CollectClinicals;

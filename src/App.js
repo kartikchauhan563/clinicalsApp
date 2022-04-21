@@ -1,7 +1,11 @@
 import "./App.css";
+import React  from 'react';
 import { Route, Switch } from "react-router-dom";
 import CollectClinicals from "./components/CollectClinicals";
 import ChartGenerator from "./components/ChartGenerator";
+import Home from "./components/Home";
+import AddPatient from "./components/AddPatient";
+import AnalyzeData from "./components/AnalyzeData";
 
 function App() {
   return (
