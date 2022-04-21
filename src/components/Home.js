@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 class Home extends React.Component{
@@ -34,9 +34,9 @@ return(
             <RowCreator item={patient} />)}
         </tbody>
         <br />
-        <link to={'/addPatient'}>
+        <Link to={'/AddPatient'}>
         <font size="5"> Register Patient</font>
-        </link>
+        </Link>
     </table>
 </div>
 )
@@ -52,10 +52,10 @@ return <tr>
     <td>{patient.lastName}</td>
     <td>{patient.age}</td>
     <td>
-        <link to={'/patientDetails/'+patient.id}> Add Data </link>
+        <Link to={'/patientDetails/'+patient.id}> Add Data </Link>
     </td>
     <td>
-        <link to={'/analyze/'+patient.id}> Analyze </link>
+        <Link to={'/analyze/'+patient.id}> Analyze </Link>
     </td>
 
 </tr>
@@ -63,4 +63,4 @@ return <tr>
 }
 }
 
-export default Home;
+export default Home; 
